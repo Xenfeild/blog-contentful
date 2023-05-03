@@ -1,7 +1,12 @@
+import Layout from '@/components/layout/Layout'
 import React from 'react'
 
 export default function index() {
-  return 
-    <div>Pages dynamique</div>;
-  
+  return (
+    <div>
+      <Layout>
+      Pages dyn0amique
+      </Layout>
+      </div>
+    )
 }
