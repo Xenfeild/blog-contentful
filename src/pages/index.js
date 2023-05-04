@@ -5,6 +5,7 @@ import Layout from '@/components/layout/Layout'
 import { createClient } from 'contentful'
 import Card from '@/components/cards/Card'
 import Link from 'next/link'
+import HeroHome from '@/components/HeroHome'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -12,7 +13,8 @@ export default function Home({posts}) {
   return (
     <div>
       <Layout>
-        <h1 className='text-3xl font-bold text-red-600'>Hello world</h1>
+      <HeroHome/>
+        <div className='content home flex justify-center'>
         {
           posts.map((post)=>(
             <Link href={`post/${post.fields.slug}`}>
@@ -22,7 +24,9 @@ export default function Home({posts}) {
             />
             </Link>
           ))}
+          </div>
       </Layout>
+      
     </div>
   )
 }
@@ -41,7 +45,7 @@ export async function getStaticProps() {
   const data = await client.getEntries({
     content_type: 'escciBlog',
     order: "sys.createdAt",
-    limit: 8,
+    limit: 9,
   });
 
   // console.log(data);
