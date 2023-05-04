@@ -1,3 +1,4 @@
+import HeroPage from '@/components/HeroPage'
 import Layout from '@/components/layout/Layout'
 import React from 'react'
 
@@ -5,8 +6,9 @@ export default function About() {
   return (
     <div>
       <Layout>
+        <HeroPage/>
         <div className='content justify-center about'>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/hqWrr8UIwp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <img src="" alt="" />
         <div>
           <p>Welcome to Readit</p>
           <h3>We give you the best articles you want.</h3>

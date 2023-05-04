@@ -5,13 +5,13 @@ import HeroHome from '../HeroHome';
 
 export default function Navbar() {
   return (
-    <div className='flex  navbar'> 
-      <div className='content'>
-        <div className="font-bold text-white text-2xl">
+    <div className='navbar'> 
+      <div className='content flex justify-between'>
+        <div className="font-bold text-white text-2xl ">
           <h1>Read<span className='text-yellow-500'>it</span></h1>
         </div>
         <div className="">
-          <ul className='flex space-x-5 '>
+          <ul className=''>
               <Link href='/'>
                   <li>Home</li>
               </Link>
