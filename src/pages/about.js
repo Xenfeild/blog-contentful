@@ -8,7 +8,7 @@ export default function About() {
       <Layout>
         <HeroPage/>
         <div className='content justify-center about'>
-        <img src="" alt="" />
+         <img src="./public/img/about_img.jpg" alt="" />
         <div>
           <p>Welcome to Readit</p>
           <h3>We give you the best articles you want.</h3>

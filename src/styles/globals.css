@@ -194,7 +194,7 @@ iframe{
     display: flex;
     flex-direction: column;
     text-align: center;
-    border: solid 1px var(--clr-txt-b);
+
 }
 
 .aboutButton{
