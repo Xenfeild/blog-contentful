@@ -1,9 +1,13 @@
 import Link from 'next/link';
 import React from 'react';
+// import './navBar.css';
 
 export default function Navbar() {
   return (
     <div>
+      <div className='logo'>
+        <h1>redd<span>it</span></h1>
+      </div>
         <ul>
             <Link href='/'>
                 <li>Home</li>
@@ -21,3 +25,5 @@ export default function Navbar() {
     </div>
   );
 }
+
+
