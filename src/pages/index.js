@@ -15,6 +15,7 @@ export default function Home({posts}) {
       <Layout>
       <HeroHome/>
         <div className='content home flex justify-center'>
+          {/* cards */}
         {
           posts.map((post)=>(
             <Link href={`post/${post.fields.slug}`}>
