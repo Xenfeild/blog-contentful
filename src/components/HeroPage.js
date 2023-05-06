@@ -5,11 +5,11 @@ export default function HeroPage(page) {
   return (
     <div className='heroPage'>
         <div className='content'>
-            <div className='max-w-[600px] '>
+            <div className=' '>
                 <h2>{page.title}</h2>
-                <div className='beadcrump'>
-                  <a href="/">Home</a>
-                  <a href=""></a>
+                <div className='breadcrumb'>
+                  <a href="/"><p>Home/ </p></a>
+                  <a href={`/${page.urlName}`}><p>{page.title}</p></a>
                 </div>
             </div>
         </div>

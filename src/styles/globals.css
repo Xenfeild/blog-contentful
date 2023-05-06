@@ -68,7 +68,12 @@
 .heroHome span{
     font-weight: bold;
 }
-
+.breadcrumb{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
 
 /* navbar */
 .navbar{
@@ -210,7 +215,7 @@ h3{
 }
 
 .about img{
-    width: clamp(180px,90%, 500px);
+    width: clamp(180px,90%, 700px);
 }
 .about span{
     color: var(--clr-bg-yellow);
@@ -246,6 +251,7 @@ h3{
     max-width: 700px;
 }
 .aboutRight{
+    padding-top: 9em;
     max-width: 700px;
 }
 
@@ -268,13 +274,22 @@ h3{
     width: 150px;
 }
 
+.aboutButton button:active{
+    background-color: var(--clr-yellow);
+    color: #fff;
+    border: none;
+}
+
 .aboutTextBloc{
     min-height: 200px;
     max-width: 450px;
-    background-color: #d3d3d3;
     padding-top: 2rem;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
+}
+
+.managerDiv{
+    margin-bottom: 4rem;
 }
 
 .rogerScott{
@@ -291,11 +306,13 @@ h3{
     box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.43);
 }
 
+.rogerScott
+
 .rogerScott span{
     color: var(--clr-bg-yellow);
 }
 .rogerScott2 span{
-    color: var(--clr-bg-yellow);
+    color: var(--clr-bg-yellow) ;
 }
 
 .rogerScott img{
@@ -303,6 +320,7 @@ h3{
     height: 100px;
     border-radius: 100%;
     margin-right: 1rem;
+    margin-top: 1rem;
 }
 .rogerScott2{
     max-width: 450px;
@@ -324,6 +342,7 @@ h3{
     height: 100px;
     border-radius: 100%;
     margin-right: 1rem;
+    margin-top: 1rem;
 }
 
 .yellowButton{
@@ -353,6 +372,7 @@ h3{
 .contact span{
     color: #000;
 }
+
 
 .contact p{
     color: var(--clr-txt-gray);
@@ -393,10 +413,13 @@ h3{
 .slug{
     padding-top: 2rem;
     padding-bottom: 2rem;
+    display: flex;
+    flex-wrap: wrap;
 }
 
+
 .slug img{
-    width: clamp(180px,100%,500px);
+    width: clamp(180px,100%,1100px);
 }
 
 .slugTitle{
@@ -406,6 +429,7 @@ h3{
 
 .slugContent{
     margin-top: 1rem;
+    flex-wrap: wrap;
 }
 
 .search input{
@@ -415,6 +439,118 @@ h3{
 .recentBlog img{
     width: 100px;
 }
+
+.tagCloud{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.tagCloud h3{
+    margin-top: 1rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.tagCloud button{
+    border: solid 1px #000;
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+
+.paragraph{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.paragraph h3{
+    margin-top: 1rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.bottomTag button{
+    border: solid 1px #000;
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+
+/* comment */
+
+.topComment{
+    width: clamp(200px,);
+    flex-wrap: wrap;  
+    margin-top: 2rem;  
+}
+
+.topComment img{
+    max-width: 150px;
+    margin-right: 1.5rem;;
+}
+
+.topComment h4{
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.topComment p {
+    color: #747575;
+}
+
+.nbComment{
+    /* font-weight: bold; */
+    margin-top: 2rem;
+    font-size: 1.5rem;
+}
+
+.comment{
+    width: clamp(200px,);
+    flex-wrap: wrap;  
+    margin-top: 2rem;  
+}
+
+.comment img{
+    max-width: 70px;
+    height: 80px;
+    margin-right: 1.5rem;
+    border-radius: 100%;
+}
+
+.comment h4{
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.comment p {
+    color: #747575;
+}
+
+.comment button{
+    margin-top: 1rem;
+    font-size: 0.5rem;
+    font-weight: bold;
+    background-color: #bcbcbc;
+    padding: 0.5rem 0.7rem;
+    border-radius: 5px;
+}
+.postComment{
+    margin-bottom: 3rem;
+    padding-left: 5rem;
+}
+
+.postComment input{
+    display: flex;
+    justify-content: center;
+}
+
+.postComment button{
+    background-color: #ffd466;
+    color: #fff;
+    padding: 1rem 1.5rem;
+    border-radius: 5px;
+}
+
 
 input{
     border: solid 1px var(--clr-txt-gray);
@@ -442,7 +578,12 @@ input{
     .burger{
         display: none;
     }
-
+    .topComment{
+        flex-wrap: nowrap;
+    }
+    .comment{
+        flex-wrap: nowrap;
+    }
 }
 
 
@@ -461,5 +602,27 @@ input{
     }
     .contactForm{
         flex-direction: row-reverse;
+    }
+    .slugLeft{
+        width: 65%;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .slug{
+        justify-content: space-between;
+    }
+    .slugRight{
+        width: 30%;
+    }
+
+    .slugButtom{
+        width: 65%;
+    }
+    .play{
+        left: 850px;
     }
 }

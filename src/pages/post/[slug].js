@@ -64,9 +64,11 @@ export default function Index({ post }) {
   return (
     <div>
       <Layout>
-        <HeroPage title={title} />
-          <div className='content slug'>
-            <div>
+        <HeroPage 
+        title={title}
+        urlName={`post/${post.fields.slug}`} />
+          <main className='content slug'>
+            <section className='slugLeft'>
               <img
               src={ featuredImage.fields.file.url}
               alt={title}
@@ -74,11 +76,11 @@ export default function Index({ post }) {
               <p className='slugTitle'>{title}</p>
             <div className='slugContent'>     {documentToReactComponents(content)}
             </div>
-          </div>
+          </section>
           {/* right side */}
 
           {/* input search */}
-          <div>
+          <section className='slugRight'>
             <div className="search">
               <input type="textarea" placeholder='Type a keyword and hit enter'/>
             </div>
@@ -131,13 +133,96 @@ export default function Index({ post }) {
                     <p className='txt-gray' >oct. 16,2019 admin 19</p>
                 </div>
               </div>
+                <div className='img_footer flex flex-wrap' >
+                  <img src='/img/image_3.jpg' />
+                  <div>
+                    <p className='text-gray-footer' >Even the all-powerfull</p>
+                    <p className='text-gray-footer' >Pointing has no </p>
+                    <p className='text-gray-footer' >control about</p>
+                    <p className='txt-gray' >oct. 16,2019 admin 19</p>
+                </div>
+              </div>
             </div>
-          </div>
+            <div className='tagCloud'>
+              <h3>Tag cloud</h3>
+              <button>CAT</button>
+              <button>ABSTRACT</button>
+              <button>PEOPLE</button>
+              <button>PERSON</button>
+              <button>MODEL</button>
+              <button>DELICIOUS</button>
+              <button>DESSERT</button>
+              <button>DRINKS</button>
+            </div>
+            <div className="paragraph">
+              <h3>Paragraph</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos porro aliquid suscipit doloremque, sit architecto dolorem minus alias provident odio dolores! Odit cupiditate cum ea porro mollitia? Omnis, officia facilis.</p>
+            </div>
+          </section>
           {/* bottom */}
-          <div className="">
+          <section className="slugButtom">
+            <div className='bottomTag'>
+              <button>LIFE</button>
+              <button>SPORT</button>
+              <button>TECH</button>
+              <button>TRAVEL</button>
+            </div>
+            <div className='topComment flex'>
+              <img src="/img/person_1.jpg" alt="" />
+              <div className=''>
+                <h4>Geroge Washinton</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed itaque soluta possimus porro et debitis animi eum quibusdam delectus incidunt, temporibus illum quae dolor minus asperiores nihil consequatur unde similique.</p>
+              </div>
+            </div>
+            <div className='commentZone'>
+              <div className='nbComment'>
+                <h3>6 comments</h3>
+              </div>
+              <div className='comment flex'>
+                <img src="/img/person_1.jpg" alt="" />
+                <div className=''>
+                  <h4>Geroge Washinton</h4>
+                  <p className='mt-1 mb-2'>November 43 2019 at 2:21PM</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed itaque soluta possimus porro et debitis animi eum quibusdam delectus incidunt, temporibus illum quae dolor minus asperiores nihil consequatur unde similique.</p>
+                  <button>REPLY</button>
+                </div>
+              </div>
+              <div className='comment flex'>
+                <img src="/img/person_1.jpg" alt="" />
+                <div className=''>
+                  <h4>Geroge Washinton</h4>
+                  <p className='mt-1 mb-2'>November 43 2019 at 2:21PM</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed itaque soluta possimus porro et debitis animi eum quibusdam delectus incidunt, temporibus illum quae dolor minus asperiores nihil consequatur unde similique.</p>
+                  <button>REPLY</button>
+                </div>
+              </div>
+            </div>
+            <div className='nbComment'>
+              <h3>Leave a comment</h3>
+            </div>
+            <div className='postComment '>
+              <div className='flex flex-col'>
+                <label htmlFor="">Name *</label>
+                <input type="text" />
+              </div>
+              <div className='flex flex-col'>
+                <label htmlFor="">Email *</label>
+                <input type="text" />
+              </div>
+              <div className='flex flex-col'>
+                <label htmlFor="">Website *</label>
+                <input type="text" />
+              </div>
+              <div className='flex flex-col'>
+                <label htmlFor="">message *</label>
+                <input type="textarea"  className='message'/>
+              </div>
+              <button>Post Comment</button>
+            </div>
 
-          </div>
-        </div>
+
+          </section>
+        </main>
     </Layout>
   </div>
   );

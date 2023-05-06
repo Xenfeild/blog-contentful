@@ -6,7 +6,10 @@ export default function contact() {
   return (
     <div>
         <Layout>
-          <HeroPage title="Contact"/>
+          <HeroPage 
+          title="Contact"
+          urlName="contact"
+          />
           <div className='contact content'>
             <h3>Contact Information</h3>
             <div className="contactData">

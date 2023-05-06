@@ -2,15 +2,20 @@ import HeroPage from '@/components/HeroPage'
 import Layout from '@/components/layout/Layout'
 import React from 'react'
 
+
+
 export default function About() {
   return (
     <div>
       <Layout>
-        <HeroPage title="About"/>
+        <HeroPage 
+        title="About"
+        urlName="about"
+        />
           <div className='content justify-center about'>
-            {/* <div className='play'>
+            <div className='play'>
                 <img src="/img/play.png" alt="" />
-              </div> */}
+              </div>
             <div className="aboutLeft">
               <img src="/img/img_about.jpg" alt="" />
             </div>
@@ -34,42 +39,42 @@ export default function About() {
                 <h3>Happy Clients</h3>
               </div>
               <div className="managerDiv">
-              <div className='rogerScott2'>
-                <p>Far far away, behind the word mountains, far from the countries Valkalia and Consonantia, there live the blind texts</p>      
-                <div className='flex justify-around'>
-                  <div className='rogerScottPhoto'>
-                  <img src="/img/person_2.jpg" alt="" className='border-around'/>
-                  </div>
-                  <div>
-                    <h3>Roger Scott</h3>
-                    <p><span>Marketing Manager</span></p>
-                  </div>
-                </div>
-              </div>
-              <div className='rogerScott'>
-                <p>Far far away, behind the word mountains, far from the countries Valkalia and Consonantia, there live the blind texts</p>      
-                <div className='flex justify-around'>
-                  <div className='rogerScottPhoto'>
-                  <img src="/img/person_1.jpg" alt="" className='border-around'/>
-                  </div>
-                  <div>
-                    <h3>Roger Scott</h3>
-                    <p><span>Marketing Manager</span></p>
+                <div className='rogerScott2'>
+                  <p>Far far away, behind the word mountains, far from the countries Valkalia and Consonantia, there live the blind texts</p>      
+                  <div className='flex justify-around'>
+                    <div className='rogerScottPhoto'>
+                    <img src="/img/person_2.jpg" alt="" className='border-around'/>
+                    </div>
+                    <div>
+                      <h3>Roger Scott</h3>
+                      <p className='text-[#ffd466]'>Marketing Manager</p>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className='rogerScott2'>
-                <p>Far far away, behind the word mountains, far from the countries Valkalia and Consonantia, there live the blind texts</p>      
-                <div className='flex justify-around'>
-                  <div className='rogerScottPhoto'>
-                  <img src="/img/person_2.jpg" alt="" className='border-around'/>
-                  </div>
-                  <div>
-                    <h3>Roger Scott</h3>
-                    <p><span>Marketing Manager</span></p>
+                <div className='rogerScott'>
+                  <p>Far far away, behind the word mountains, far from the countries Valkalia and Consonantia, there live the blind texts</p>      
+                  <div className='flex justify-around'>
+                    <div className='rogerScottPhoto'>
+                    <img src="/img/person_1.jpg" alt="" className='border-around'/>
+                    </div>
+                    <div>
+                      <h3>Roger Scott</h3>
+                      <p className='text-[#ffd466]'>Marketing Manager</p>
+                    </div>
                   </div>
                 </div>
-              </div>
+                <div className='rogerScott2'>
+                  <p>Far far away, behind the word mountains, far from the countries Valkalia and Consonantia, there live the blind texts</p>      
+                  <div className='flex justify-around '>
+                    <div className='rogerScottPhoto'>
+                      <img src="/img/person_2.jpg" alt="" className='border-around'/>
+                    </div>
+                    <div>
+                      <h3>Roger Scott</h3>
+                      <p className='text-[#ffd466]'>Marketing Manager</p>
+                    </div>
+                  </div>
+                </div>
             </div>
           </div>
       </Layout>
